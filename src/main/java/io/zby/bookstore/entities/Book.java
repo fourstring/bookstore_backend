@@ -79,8 +79,7 @@ public class Book extends BaseEntity {
         this.stock = stock;
     }
 
-    @Column(columnDefinition = "text null")
-    @Lob
+    @Transient
     public String getDescription() {
         return description;
     }
